@@ -1,10 +1,7 @@
-<#
-win-hidshell.ps1
-Authors:  Ø1phor1³(@01p8or13), Wasabi (@spiceywasabi)
-Acknowledgements: rogandawes (@RoganDawes)
-Required Dependencies: Activated HIDX on OMG Elite device
-Recommended Listener: stealthlink-client-universal.py
-#>
+#win-hidshell.ps1
+#Required Dependencies: Activated HIDX on OMG Elite device
+#Recommended Listener: stealthlink-client-universal.py
+
 
 function HIDXShell {
 <#
@@ -23,18 +20,6 @@ Display more information about received and executed commands
 .EXAMPLE
 HIDXShell usage with defined device: 
 HIDXShell -VendorID D3C0 -ProductID D34D
-
-.LINK
-https://github.com/0i41E
-https://github.com/spiceywasabi
-https://github.com/rogandawes
-https://github.com/O-MG/O.MG-Firmware/blob/stable/tools/HIDX/python/stealthlink-client-universal.py
-https://github.com/O-MG/O.MG-Firmware/wiki/HIDX-StealthLink---Windows-PowerShell---Shell
-
-#Credits to Rogan for idea of filehandle and device identification
-
-#AMSI Test Sample: 7e72c3ce-861b-4339-8740-0ac1484c1386
-X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*
 #>
 
     [cmdletbinding()]
