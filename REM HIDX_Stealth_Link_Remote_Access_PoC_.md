@@ -1,7 +1,6 @@
 REM       HIDX_Stealth_Link_Remote_Access_PoC_IEX
 REM       Version 1.0
 REM       OS: Windows
-REM       Author: 0i41E
 REM       Requirements: Firmware Version 3.0 minimum, Universal Python Listener, Activated HIDX
 
 REM       HID based remote shell, executed via powershell.
