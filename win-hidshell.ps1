@@ -90,7 +90,7 @@ namespace omg {
         $outputChunkSize = 8 # Kept at 8 for best experience
         $outputChunkNr = [Math]::Ceiling($outputLength / $outputChunkSize)
 
-        #Verbosity message
+        #Verbosity message, if you see this it aint right
         if ($VerbosePreference -eq 'Continue') {
             Write-Host -ForegroundColor green "[+]Output of $($outputLength) bytes ready to send in $($outputChunkNr) packets."
         }
@@ -118,7 +118,7 @@ namespace omg {
     CreateBinding
     #Find O.MG device
     $devicestring = Get-OMGDevice
-    #Verify device - error checking
+    #Verify device - error checking, if you see this you fucked up the payload order
     if($null -eq $devicestring){
         $loop=$false
         Write-Host -ForegroundColor red "[!]Error: No O.MG Device not found! Check VID/PID"
@@ -128,7 +128,7 @@ namespace omg {
     #Verify device - open device
     Write-Host -ForegroundColor Green "[+]Identified O.MG Device: ${devicestring}"
     $filehandle = [omg.hidx]::open($devicestring)
-    #Verify filehandle 
+    #Verify filehandle, DO NOT REMOVE IT BREAKS IT EVEN IF FILEHANDLE IS OKAY
     if($null -eq $filehandle){
         $loop=$false
         Write-Host -ForegroundColor red "[!]Error: Filehandle is empty"
